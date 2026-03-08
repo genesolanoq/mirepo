@@ -23,11 +23,14 @@ body {
   color: var(--text);
   line-height: 1.5;
 }
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:1rem 2rem;
+header {
+  padding: 1.1rem 1rem;
+  background: rgba(255, 255, 255, 0.82);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 
@@ -138,6 +141,8 @@ input,
 select {
   background: #ffffff;
   color: var(--text);
+    border:1px solid #e4d5fb;
+  transition:all 0.2s ease;
 }
 
 input:focus,
